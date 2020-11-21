@@ -11,6 +11,7 @@
   "permissions": ["tabs"],
   "browser_action": {
     "default_popup": "index.html",
-    "default_title": "Quick Vid"
+    "default_title": "Quick Vid",
+    "default_icon": "./logo.png"
   }
 }
