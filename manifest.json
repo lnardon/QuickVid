@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "QuickVid",
-  "version": "0.1",
+  "version": "1.0",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
@@ -13,5 +13,10 @@
     "default_popup": "index.html",
     "default_title": "Quick Vid",
     "default_icon": "./logo.png"
+  },
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
   }
 }
