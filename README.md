@@ -1,9 +1,9 @@
 # QuickVid (Chrome / Chromium)
 
-QuickVid
+QuickVid is a chrome/chromium extension to change the velocity of any video in the browser from 0.5x to 5x.
 
 <p align="center">
-  <!-- <img src="./demo.gif"> -->
+  <img src="./demo.gif">
 </p>
 
 ## Installation
