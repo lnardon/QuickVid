@@ -1,5 +1,10 @@
 // Script Listener to modify speed
 function gotMessage(message, sender, sendResponse) {
-  document.querySelector("video").playbackRate = message;
+  if (message.type === "SET") {
+    document.querySelector("video").playbackRate = message.value;
+  } else {
+    sendResponse(document.querySelector("video").playbackRate);
+  }
 }
+
 chrome.runtime.onMessage.addListener(gotMessage);
