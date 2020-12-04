@@ -8,8 +8,10 @@ function handleClick() {
 function handleLoad() {
   chrome.tabs.query({ currentWindow: true, active: true }, (tabs) => {
     chrome.tabs.sendMessage(tabs[0].id, { type: "GET" }, (e) => {
-      document.getElementById("selectedSpeed").innerText = e + "x";
-      document.getElementById("speed").value = e;
+      if (e) {
+        document.getElementById("selectedSpeed").innerText = e + "x";
+        document.getElementById("speed").value = e;
+      }
     });
   });
 }
